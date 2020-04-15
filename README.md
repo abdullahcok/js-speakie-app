@@ -1,2 +1,2 @@
 # js-speakie-app
-speaker based on mic app with using bts4
+speak-to-write to screen app based on mic with using bts4
