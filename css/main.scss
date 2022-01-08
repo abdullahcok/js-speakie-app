@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+@import 'mixins';
+@import 'colors';
+
+*{
+  box-sizing: border-box;
+}
+
+
+body {
+  background:linear-gradient(rgba(50,50,50,0.3), rgba(0,0,0,0.9)), url('/img/bg.jpeg');
+  background-repeat: no-no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+
+.container{
+  margin: 30px auto;
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $grey;
+  border-radius: 5px;
+  box-shadow: $box-shadow;
+
+  header{
+    width: 300px;
+    background: $blue;
+    color: $dgrey;
+    @include bt-radius();
+    padding: 5px 30px;
+
+    .co{
+      float: left;
+      font-size: 20px;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .logo{
+      width: 50px;
+      padding: 10px 40px;
+      float: right;
+      border-radius: 3px;
+      color: $dgrey;
+    }
+  }
+
+  section{
+    h3{
+      background:linear-gradient(rgba(0,0,0,0.1), rgba(200,200,100,0.1));
+      color: $white;
+      opacity: 0.5;
+      padding: 5px;
+      border-radius: 2px;
+      width: 280px;
+      font-weight: bold;
+    }
+
+    .mic{
+      margin: 60px 0;
+    }
+
+    p{
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .play-again{
+      padding: 8px 15px;
+      border: 0;
+      background: $grey;
+      border-radius: 3px;
+      margin-top: 10px;
+    }
+
+    .msg{
+      font-size: 1.1em;
+      margin-top: 40px;
+      color: #fff;
+    }
+
+    .box{
+      display: inline-block;
+      font-size: 20px;
+      margin: 10px;
+      padding: 5px;
+    }
+  }
+
+}

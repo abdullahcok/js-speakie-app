@@ -1,25 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
-
-:root {
-  --mainPink: #ef7998;
-  --mainYellow: rgb(249, 228, 148);
-  --mainWhite: #fff;
-  --mainBlack: #1d1d1d;
-  --mainBlue: #3366ff;
-  --yellowTrans: rgba(249, 228, 148, 0.5);
-  --mainGrey: rgb(238, 238, 238);
-  --darkGrey: #2d2d2d;
-  --box-shadow: 0 2px 4px rgba(0,0,0, 1);
-}
-
-
-*{
+* {
   box-sizing: border-box;
 }
 
-
 body {
-  background:linear-gradient(rgba(50,50,50,0.3), rgba(0,0,0,0.9)), url('/img/bg.jpeg');
+  background: linear-gradient(rgba(50, 50, 50, 0.3), rgba(0, 0, 0, 0.9)), url("/img/bg.jpeg");
   background-repeat: no-no-repeat;
   background-size: cover;
   background-position: center center;
@@ -29,26 +14,47 @@ body {
   justify-content: center;
   min-height: 100vh;
   overflow: hidden;
+  font-family: sans-serif;
 }
 
-
-.container{
-  margin: 40px auto;
+.container {
+  margin: 30px auto;
   width: 300px;
   height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: #1a1a1a;
-  border-radius: 10px;
-  box-shadow: var(--box-shadow);
+  background: #434343;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px black;
 }
 
+.container header {
+  width: 300px;
+  background: #3366ff;
+  color: #2d2d2d;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 5px 30px;
+}
 
+.container header .co {
+  float: left;
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: bold;
+}
 
-h3{
-  background:linear-gradient(rgba(0,0,0,0.1), rgba(200,200,100,0.1));
+.container header .logo {
+  width: 50px;
+  padding: 10px 40px;
+  float: right;
+  border-radius: 3px;
+  color: #2d2d2d;
+}
+
+.container section h3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(200, 200, 100, 0.1));
   color: #fff;
   opacity: 0.5;
   padding: 5px;
@@ -57,30 +63,30 @@ h3{
   font-weight: bold;
 }
 
-.mic{
-  margin-bottom: 40px;
+.container section .mic {
+  margin: 60px 0;
 }
 
-p{
+.container section p {
   line-height: 1.5;
   margin: 0;
 }
 
-.play-again{
+.container section .play-again {
   padding: 8px 15px;
   border: 0;
-  background: var(--mainGrey);
+  background: #434343;
   border-radius: 3px;
   margin-top: 10px;
 }
 
-.msg{
+.container section .msg {
   font-size: 1.1em;
   margin-top: 40px;
   color: #fff;
 }
 
-.box{
+.container section .box {
   display: inline-block;
   font-size: 20px;
   margin: 10px;
